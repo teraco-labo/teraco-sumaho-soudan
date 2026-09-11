@@ -245,8 +245,9 @@ def _teraco_version() -> str:
 
 
 # ─── feed ────────────────────────────────────────────────────────
-def _rfc2822(date_str):
-    dt = datetime.strptime(date_str, "%Y-%m-%d").replace(hour=6, tzinfo=JST)
+def _rfc2822(date_str, ep_num=0):
+    """公開日時。同じ日に2本出しても順番が崩れないよう、回数ぶんの分を足す（第2回=6:02）"""
+    dt = datetime.strptime(date_str, "%Y-%m-%d").replace(hour=6, minute=min(int(ep_num), 59), tzinfo=JST)
     return dt.strftime("%a, %d %b %Y %H:%M:%S %z")
 
 def _hms(sec):
@@ -289,7 +290,7 @@ def cmd_feed(slug, title=None, date=None):
     <itunes:summary>{_x(e['description'] + tail)}</itunes:summary>
     <enclosure url="{e['url']}" length="{e['size']}" type="audio/mpeg"/>
     <guid isPermaLink="false">{e['url']}</guid>
-    <pubDate>{_rfc2822(e['date'])}</pubDate>
+    <pubDate>{_rfc2822(e['date'], e['episode_num'])}</pubDate>
     <itunes:author>{_x(CFG['author'])}</itunes:author>
     <itunes:episode>{e['episode_num']}</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>

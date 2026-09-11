@@ -19,7 +19,21 @@
   <itunes:explicit>false</itunes:explicit>
   <itunes:type>episodic</itunes:type>
   <itunes:category text="Education"><itunes:category text="How To"/></itunes:category>
-  <lastBuildDate>Fri, 11 Sep 2026 09:29:55 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 12:38:22 +0900</lastBuildDate>
+  <item>
+    <title>LINEで届いた写真を保存する。30日で消える前に</title>
+    <itunes:title>LINEで届いた写真を保存する。30日で消える前に</itunes:title>
+    <description>「この間もらった綺麗な写真が見れなかった」。LINEで届いた写真は、まだ自分のスマホに入っていません。LINEの預かり所に30日置かれているだけ。写真を大きく開いて、下向き矢印の「保存」を押すだけで、写真アプリに残ります。共有ボタンとの見分け方、動画も同じこと、アルバムなら期限がないことも。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</description>
+    <itunes:summary>「この間もらった綺麗な写真が見れなかった」。LINEで届いた写真は、まだ自分のスマホに入っていません。LINEの預かり所に30日置かれているだけ。写真を大きく開いて、下向き矢印の「保存」を押すだけで、写真アプリに残ります。共有ボタンとの見分け方、動画も同じこと、アルバムなら期限がないことも。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</itunes:summary>
+    <enclosure url="https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-save-photos.mp3" length="2030542" type="audio/mpeg"/>
+    <guid isPermaLink="false">https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-save-photos.mp3</guid>
+    <pubDate>Fri, 11 Sep 2026 06:02:00 +0900</pubDate>
+    <itunes:author>てらこ先生</itunes:author>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:duration>00:03:23</itunes:duration>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
   <item>
     <title>LINEで写真をまとめて送る。右上の小さい丸がコツ</title>
     <itunes:title>LINEで写真をまとめて送る。右上の小さい丸がコツ</itunes:title>
@@ -27,7 +41,7 @@
     <itunes:summary>写真を1枚ずつ送っていませんか。トーク画面の写真マークを押して、四角い箱の右上にある小さい丸を順番に押せば、何枚でもまとめて送れます。真ん中を押すと写真が開いてしまう、というつまずきの直し方と、大事な写真をきれいに送る「オリジナル」も。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</itunes:summary>
     <enclosure url="https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-photos.mp3" length="2500485" type="audio/mpeg"/>
     <guid isPermaLink="false">https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-photos.mp3</guid>
-    <pubDate>Fri, 11 Sep 2026 06:00:00 +0900</pubDate>
+    <pubDate>Fri, 11 Sep 2026 06:01:00 +0900</pubDate>
     <itunes:author>てらこ先生</itunes:author>
     <itunes:episode>1</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>

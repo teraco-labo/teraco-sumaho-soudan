@@ -75,6 +75,12 @@ python3 make_episode.py cover                        # カバー画像（3000x30
 | Substack セクション | https://teracosensei.substack.com/s/sumaho | 作成済み（新規購読者は自動追加・既存リストもコピー） |
 | Spotify 番組 | https://open.spotify.com/show/1yRCTJ5JaeuOf7ZlPftI0R | 2026-09-11 登録済み（Japan／Japanese／Educational・How-to）。公開まで最大24時間 |
 
+## ネタの順番待ち（藤崎さんが選んだもの）
+| 順 | テーマ | 藤崎さんの注文 |
+|---|---|---|
+| 2本目 | LINEで届いた写真を保存する | 1本目の続き。「送られた写真には期限がある」「一度保存しないとフォトに出てこない」 |
+| 3本目 | LINEの無料スタンプをもらう | **LINE側の仕様が変わり、友だち登録した企業をブロックするとスタンプも使えなくなる。そこも教えること**（2026-09-11） |
+
 ## まだ決めていないこと
 - LINE への届け方（週1まとめで「今週の2本」か、1本ごとか）
 - Substack の「ポッドキャストをインポート」で上の RSS を取り込むか（取り込めば各回が Substack にも音声つきで並ぶ。要検証）

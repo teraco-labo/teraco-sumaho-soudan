@@ -1,5 +1,16 @@
 [
  {
+  "slug": "line-save-photos",
+  "date": "2026-09-11",
+  "title": "LINEで届いた写真を保存する。30日で消える前に",
+  "description": "「この間もらった綺麗な写真が見れなかった」。LINEで届いた写真は、まだ自分のスマホに入っていません。LINEの預かり所に30日置かれているだけ。写真を大きく開いて、下向き矢印の「保存」を押すだけで、写真アプリに残ります。共有ボタンとの見分け方、動画も同じこと、アルバムなら期限がないことも。",
+  "url": "https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-save-photos.mp3",
+  "size": 2030542,
+  "duration": 203,
+  "episode_num": 2,
+  "voice": "Teraco Voice 1.0"
+ },
+ {
   "slug": "line-photos",
   "date": "2026-09-11",
   "title": "LINEで写真をまとめて送る。右上の小さい丸がコツ",
