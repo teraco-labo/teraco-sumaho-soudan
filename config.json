@@ -4,11 +4,20 @@
   "owner_email": "fujisaki@teraco-labo.com",
   "base_url": "https://teraco-labo.github.io/teraco-sumaho-soudan",
   "description": "スマホ教室のてらこ先生が、教室で実際に聞かれた「これ、どうやるの？」に、1回1つ、5分で答えます。LINE・写真・PayPay・詐欺メールの見分け方まで。ゆっくり話すので、聴きながら一緒に指を動かせます。宮崎県西都市のスマホ教室 TERACO.LABO から。",
-  "category": ["Education", "How To"],
+  "category": [
+    "Education",
+    "How To"
+  ],
   "spotify_url": "",
   "line_url": "https://lin.ee/9c4pI82",
   "site_url": "https://teraco-labo.com/",
   "ollama_url": "http://localhost:11434",
   "ollama_model": "qwen3.5:27b",
-  "target_chars": [1500, 1800]
+  "target_chars": [
+    1500,
+    1800
+  ],
+  "substack_section_url": "https://teracosensei.substack.com/s/sumaho",
+  "feed_url": "https://teraco-labo.github.io/teraco-sumaho-soudan/feed.xml",
+  "player_url": "https://teraco-labo.github.io/teraco-sumaho-soudan/"
 }

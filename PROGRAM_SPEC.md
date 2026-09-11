@@ -67,7 +67,14 @@ python3 make_episode.py cover                        # カバー画像（3000x30
 - 声づくりは **このMacでしか動かない**。まずは手動（藤崎さんが台本を確認 → voice → feed → push）。
   定時化するなら AIニュースと同じく `~/ai-office/work/` に複製を置く（launchd は ~/Documents を読めない）
 
+## 公開先（2026-09-11 に開設）
+| 場所 | URL | 状態 |
+|---|---|---|
+| 置き場（GitHub Pages） | https://teraco-labo.github.io/teraco-sumaho-soudan/ | 公開済み。生徒さんにはこのURLを LINE で渡す（押すだけプレイヤー） |
+| RSS（Spotify に登録するURL） | https://teraco-labo.github.io/teraco-sumaho-soudan/feed.xml | 公開済み |
+| Substack セクション | https://teracosensei.substack.com/s/sumaho | 作成済み（新規購読者は自動追加・既存リストもコピー） |
+| Spotify 番組 | （登録後にここへ） | 登録は藤崎さんのログインが必要 |
+
 ## まだ決めていないこと
-- カバー画像の見た目（キャラ＋番組名。配色はリンク集と同じクリーム＋深緑で試作）
 - LINE への届け方（週1まとめで「今週の2本」か、1本ごとか）
-- Substack セクションの作成（藤崎さんの操作。作ったらURLをここに書く）
+- Substack の「ポッドキャストをインポート」で上の RSS を取り込むか（取り込めば各回が Substack にも音声つきで並ぶ。要検証）
