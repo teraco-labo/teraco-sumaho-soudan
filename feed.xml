@@ -19,7 +19,21 @@
   <itunes:explicit>false</itunes:explicit>
   <itunes:type>episodic</itunes:type>
   <itunes:category text="Education"><itunes:category text="How To"/></itunes:category>
-  <lastBuildDate>Fri, 11 Sep 2026 12:38:22 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 13:41:47 +0900</lastBuildDate>
+  <item>
+    <title>LINEの無料スタンプをもらう。もらったあと、ブロックはしないで</title>
+    <itunes:title>LINEの無料スタンプをもらう。もらったあと、ブロックはしないで</itunes:title>
+    <description>無料スタンプは、お店や会社と友だちになる代わりにもらえます。スタンプショップへの行き方から、「友だち追加してダウンロード」まで。いちばん大事なのは、2026年4月からの決まりの変更。もらった会社をブロックすると、そのスタンプが使えなくなります。お知らせがうるさいときは、ブロックではなく通知オフ。その手順もゆっくり説明します。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</description>
+    <itunes:summary>無料スタンプは、お店や会社と友だちになる代わりにもらえます。スタンプショップへの行き方から、「友だち追加してダウンロード」まで。いちばん大事なのは、2026年4月からの決まりの変更。もらった会社をブロックすると、そのスタンプが使えなくなります。お知らせがうるさいときは、ブロックではなく通知オフ。その手順もゆっくり説明します。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</itunes:summary>
+    <enclosure url="https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-free-stamps.mp3" length="1863881" type="audio/mpeg"/>
+    <guid isPermaLink="false">https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-free-stamps.mp3</guid>
+    <pubDate>Fri, 11 Sep 2026 06:03:00 +0900</pubDate>
+    <itunes:author>てらこ先生</itunes:author>
+    <itunes:episode>3</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:duration>00:03:06</itunes:duration>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
   <item>
     <title>LINEで届いた写真を保存する。30日で消える前に</title>
     <itunes:title>LINEで届いた写真を保存する。30日で消える前に</itunes:title>
