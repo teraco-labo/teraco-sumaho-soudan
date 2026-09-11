@@ -73,7 +73,7 @@ python3 make_episode.py cover                        # カバー画像（3000x30
 | 置き場（GitHub Pages） | https://teraco-labo.github.io/teraco-sumaho-soudan/ | 公開済み。生徒さんにはこのURLを LINE で渡す（押すだけプレイヤー） |
 | RSS（Spotify に登録するURL） | https://teraco-labo.github.io/teraco-sumaho-soudan/feed.xml | 公開済み |
 | Substack セクション | https://teracosensei.substack.com/s/sumaho | 作成済み（新規購読者は自動追加・既存リストもコピー） |
-| Spotify 番組 | （登録後にここへ） | 登録は藤崎さんのログインが必要 |
+| Spotify 番組 | https://open.spotify.com/show/1yRCTJ5JaeuOf7ZlPftI0R | 2026-09-11 登録済み（Japan／Japanese／Educational・How-to）。公開まで最大24時間 |
 
 ## まだ決めていないこと
 - LINE への届け方（週1まとめで「今週の2本」か、1本ごとか）
