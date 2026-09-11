@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>てらこ先生のスマホ相談室</title>
+  <itunes:title>てらこ先生のスマホ相談室</itunes:title>
+  <link>https://teraco-labo.github.io/teraco-sumaho-soudan/</link>
+  <atom:link href="https://teraco-labo.github.io/teraco-sumaho-soudan/feed.xml" rel="self" type="application/rss+xml"/>
+  <language>ja</language>
+  <description>スマホ教室のてらこ先生が、教室で実際に聞かれた「これ、どうやるの？」に、1回1つ、5分で答えます。LINE・写真・PayPay・詐欺メールの見分け方まで。ゆっくり話すので、聴きながら一緒に指を動かせます。宮崎県西都市のスマホ教室 TERACO.LABO から。</description>
+  <itunes:summary>スマホ教室のてらこ先生が、教室で実際に聞かれた「これ、どうやるの？」に、1回1つ、5分で答えます。LINE・写真・PayPay・詐欺メールの見分け方まで。ゆっくり話すので、聴きながら一緒に指を動かせます。宮崎県西都市のスマホ教室 TERACO.LABO から。</itunes:summary>
+  <itunes:author>てらこ先生</itunes:author>
+  <itunes:owner>
+    <itunes:name>てらこ先生</itunes:name>
+    <itunes:email>fujisaki@teraco-labo.com</itunes:email>
+  </itunes:owner>
+  <image><url>https://teraco-labo.github.io/teraco-sumaho-soudan/cover.jpg?v=20260911</url><title>てらこ先生のスマホ相談室</title><link>https://teraco-labo.github.io/teraco-sumaho-soudan/</link></image>
+  <itunes:image href="https://teraco-labo.github.io/teraco-sumaho-soudan/cover.jpg?v=20260911"/>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+  <itunes:category text="Education"><itunes:category text="How To"/></itunes:category>
+  <lastBuildDate>Fri, 11 Sep 2026 09:29:55 +0900</lastBuildDate>
+  <item>
+    <title>LINEで写真をまとめて送る。右上の小さい丸がコツ</title>
+    <itunes:title>LINEで写真をまとめて送る。右上の小さい丸がコツ</itunes:title>
+    <description>写真を1枚ずつ送っていませんか。トーク画面の写真マークを押して、四角い箱の右上にある小さい丸を順番に押せば、何枚でもまとめて送れます。真ん中を押すと写真が開いてしまう、というつまずきの直し方と、大事な写真をきれいに送る「オリジナル」も。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</description>
+    <itunes:summary>写真を1枚ずつ送っていませんか。トーク画面の写真マークを押して、四角い箱の右上にある小さい丸を順番に押せば、何枚でもまとめて送れます。真ん中を押すと写真が開いてしまう、というつまずきの直し方と、大事な写真をきれいに送る「オリジナル」も。 ／ 教室と公式LINE → https://lin.ee/9c4pI82</itunes:summary>
+    <enclosure url="https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-photos.mp3" length="2500485" type="audio/mpeg"/>
+    <guid isPermaLink="false">https://teraco-labo.github.io/teraco-sumaho-soudan/podcast/2026-09-11_line-photos.mp3</guid>
+    <pubDate>Fri, 11 Sep 2026 06:00:00 +0900</pubDate>
+    <itunes:author>てらこ先生</itunes:author>
+    <itunes:episode>1</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:duration>00:04:10</itunes:duration>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+</channel>
+</rss>

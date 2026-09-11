@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>てらこ先生のスマホ相談室</title>
+<meta name="description" content="教室で聞かれた「どうやるの？」に、てらこ先生が1回1つ、5分で答えます。">
+<link rel="icon" href="cover.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --cream:#FAF7F1; --green:#3F6B4F; --green-dark:#2E523C; --ink:#2B2B28; --ink2:#5A5A54; --line:#E6E1D6; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--cream); color:var(--ink); font-family:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;
+         font-size:19px; line-height:1.7; }
+  header { background:var(--green); color:#fff; padding:28px 20px 24px; text-align:center; }
+  header .sub { font-size:16px; opacity:.9; }
+  header h1 { font-size:30px; font-weight:700; letter-spacing:1px; margin-top:2px; }
+  header p { font-size:16px; margin-top:10px; opacity:.95; }
+  main { max-width:640px; margin:0 auto; padding:18px 16px 60px; }
+  .ep { background:#fff; border:2px solid var(--line); border-radius:18px; padding:20px 18px; margin-top:16px; }
+  .ep .num { font-size:15px; color:var(--ink2); font-weight:700; }
+  .ep h2 { font-size:22px; font-weight:700; margin:4px 0 10px; line-height:1.4; }
+  .ep p { font-size:16px; color:var(--ink2); }
+  .btn { display:flex; align-items:center; justify-content:center; gap:12px; width:100%; margin-top:14px;
+         padding:18px; border:none; border-radius:16px; background:var(--green); color:#fff;
+         font-size:22px; font-weight:700; font-family:inherit; cursor:pointer; }
+  .btn:active { background:var(--green-dark); }
+  .btn svg { width:30px; height:30px; }
+  .bar { margin-top:14px; display:none; }
+  .ep.playing .bar { display:block; }
+  input[type=range] { width:100%; accent-color:var(--green); }
+  .time { display:flex; justify-content:space-between; font-size:15px; color:var(--ink2); margin-top:4px; }
+  .foot { margin-top:34px; text-align:center; font-size:15px; color:var(--ink2); }
+  .foot a { color:var(--green-dark); font-weight:700; }
+  .empty { text-align:center; color:var(--ink2); padding:40px 0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="sub">てらこ先生の</div>
+  <h1>スマホ相談室</h1>
+  <p>教室で聞かれた「どうやるの？」に、<br>1回1つ、5分でお答えします。</p>
+</header>
+<main>
+  <div id="list"><div class="empty">読み込んでいます…</div></div>
+  <div class="foot">
+    わからないことは、公式LINEでも聞けます。<br>
+    <a href="https://lin.ee/9c4pI82">TERACO.LABO の公式LINE</a>
+  </div>
+</main>
+<audio id="audio" preload="none"></audio>
+<script>
+const audio = document.getElementById('audio');
+let current = null;
+const ICON_PLAY  = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+const ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>';
+function fmt(s){ s=Math.floor(s||0); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+fetch('episodes.json?v=' + Date.now()).then(r=>r.json()).then(eps=>{
+  const list=document.getElementById('list'); list.innerHTML='';
+  if(!eps.length){ list.innerHTML='<div class="empty">まだ配信がありません</div>'; return; }
+  eps.forEach(e=>{
+    const d=document.createElement('div'); d.className='ep';
+    d.innerHTML = '<div class="num">第'+e.episode_num+'回・'+e.date.replace(/-/g,'/')+'・'+fmt(e.duration)+'</div>'
+      + '<h2></h2><p></p>'
+      + '<button class="btn">'+ICON_PLAY+'<span>聴く</span></button>'
+      + '<div class="bar"><input type="range" min="0" max="100" value="0"><div class="time"><span class="cur">0:00</span><span class="dur">'+fmt(e.duration)+'</span></div></div>';
+    d.querySelector('h2').textContent=e.title; d.querySelector('p').textContent=e.description;
+    const btn=d.querySelector('.btn'), rng=d.querySelector('input'), cur=d.querySelector('.cur');
+    btn.onclick=()=>{
+      if(current!==d){ if(current) stopUI(current); current=d; audio.src=e.url; d.classList.add('playing'); }
+      if(audio.paused){ audio.play(); btn.innerHTML=ICON_PAUSE+'<span>止める</span>'; }
+      else { audio.pause(); btn.innerHTML=ICON_PLAY+'<span>つづきを聴く</span>'; }
+    };
+    rng.oninput=()=>{ if(current===d && audio.duration) audio.currentTime=audio.duration*rng.value/100; };
+    d._ui={btn,rng,cur}; list.appendChild(d);
+  });
+});
+function stopUI(d){ d.classList.remove('playing'); d._ui.btn.innerHTML=ICON_PLAY+'<span>聴く</span>'; d._ui.rng.value=0; d._ui.cur.textContent='0:00'; }
+audio.ontimeupdate=()=>{ if(!current||!audio.duration) return; current._ui.rng.value=audio.currentTime/audio.duration*100; current._ui.cur.textContent=fmt(audio.currentTime); };
+audio.onended=()=>{ if(current){ stopUI(current); } };
+</script>
+</body>
+</html>

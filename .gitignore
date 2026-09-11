@@ -1,0 +1,4 @@
+work/
+episodes/*/work/
+*.wav
+.DS_Store
